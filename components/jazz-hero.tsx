@@ -72,7 +72,7 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Watch
+          Explore
         </motion.button>
       </motion.div>
     </section>
