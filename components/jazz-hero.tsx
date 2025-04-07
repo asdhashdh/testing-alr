@@ -22,7 +22,7 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
     if (pathname === "/tour") return "games"
     if (pathname === "/videos") return "random"
     if (pathname === "/contact") return "about"
-    if (pathname == "/request") return "sdkfj"
+    if (pathname == "/request") return "request"
 
     return "home"
   }
@@ -39,7 +39,7 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
         <NavLink href="/tour" label="Games" isActive={currentActiveLink === "tour"} />
         <NavLink href="/videos" label="Random" isActive={currentActiveLink === "videos"} />
         <NavLink href="/contact" label="About" isActive={currentActiveLink === "about"} />
-        <NavLink href="/contact" label="Request" isActive={currentActiveLink === "sdkfj"} />
+        <NavLink href="/contact" label="Request" isActive={currentActiveLink === "request"} />
       </nav>
 
       {/* Main content */}
