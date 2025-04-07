@@ -22,6 +22,7 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
     if (pathname === "/tour") return "games"
     if (pathname === "/videos") return "random"
     if (pathname === "/contact") return "about"
+    if (pathname == "/request") return "sdkfj"
 
     return "home"
   }
