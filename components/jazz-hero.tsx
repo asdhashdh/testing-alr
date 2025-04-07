@@ -33,12 +33,12 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
       {/* Navigation bar */}
       <nav className="absolute top-8 left-1/2 transform -translate-x-1/2 flex space-x-6 bg-[#1e1e1e] rounded-full px-6 py-2">
         <NavLink href="/" label="Home" isActive={currentActiveLink === "home"} />
-        <NavLink href="/about" label="Movies" isActive={currentActiveLink === "about"} />
+        <NavLink href="/about" label="Movies" isActive={currentActiveLink === "movies"} />
         <NavLink href="/music" label="Google" isActive={currentActiveLink === "music"} />
         <NavLink href="/tour" label="Games" isActive={currentActiveLink === "tour"} />
         <NavLink href="/videos" label="Random" isActive={currentActiveLink === "videos"} />
         <NavLink href="/contact" label="About" isActive={currentActiveLink === "about"} />
-        <NavLink href="/contact" label="Request" isActive={currentActiveLink === "about"} />
+        <NavLink href="/contact" label="Request" isActive={currentActiveLink === "sdkfj"} />
       </nav>
 
       {/* Main content */}
