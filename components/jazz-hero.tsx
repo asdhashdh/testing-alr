@@ -57,7 +57,7 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
             stiffness: 200,
           }}
         >
-          Jazz
+          Jag
         </motion.h1>
         <motion.p
           className="text-[#828282] mb-6 text-sm"
