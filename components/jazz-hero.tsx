@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-type NavLinkType = "home" | "about" | "music" | "tour" | "videos" | "contact"
+type NavLinkType = "home" | "movies" | "google" | "games" | "random" | "about"
 
 interface JazzHeroProps {
   activeLink?: NavLinkType
@@ -17,11 +17,11 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
     if (activeLink) return activeLink
 
     if (pathname === "/") return "home"
-    if (pathname === "/about") return "about"
-    if (pathname === "/music") return "music"
-    if (pathname === "/tour") return "tour"
-    if (pathname === "/videos") return "videos"
-    if (pathname === "/contact") return "contact"
+    if (pathname === "/about") return "movies"
+    if (pathname === "/music") return "google"
+    if (pathname === "/tour") return "games"
+    if (pathname === "/videos") return "random"
+    if (pathname === "/contact") return "about"
 
     return "home"
   }
@@ -33,11 +33,11 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
       {/* Navigation bar */}
       <nav className="absolute top-8 left-1/2 transform -translate-x-1/2 flex space-x-6 bg-[#1e1e1e] rounded-full px-6 py-2">
         <NavLink href="/" label="Home" isActive={currentActiveLink === "home"} />
-        <NavLink href="/about" label="About" isActive={currentActiveLink === "about"} />
-        <NavLink href="/music" label="Music" isActive={currentActiveLink === "music"} />
-        <NavLink href="/tour" label="Tour" isActive={currentActiveLink === "tour"} />
-        <NavLink href="/videos" label="Videos" isActive={currentActiveLink === "videos"} />
-        <NavLink href="/contact" label="Contact" isActive={currentActiveLink === "contact"} />
+        <NavLink href="/about" label="Movies" isActive={currentActiveLink === "about"} />
+        <NavLink href="/music" label="Google" isActive={currentActiveLink === "music"} />
+        <NavLink href="/tour" label="Games" isActive={currentActiveLink === "tour"} />
+        <NavLink href="/videos" label="Random" isActive={currentActiveLink === "videos"} />
+        <NavLink href="/contact" label="About" isActive={currentActiveLink === "contact"} />
       </nav>
 
       {/* Main content */}
