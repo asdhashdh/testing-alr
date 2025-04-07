@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-type NavLinkType = "home" | "movies" | "google" | "games" | "random" | "about"
+type NavLinkType = "home" | "movies" | "google" | "games" | "random" | "about" | "request"
 
 interface JazzHeroProps {
   activeLink?: NavLinkType
