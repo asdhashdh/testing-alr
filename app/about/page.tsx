@@ -1,5 +1,3 @@
-import { JazzHero } from "@/components/jazz-hero"
-
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#000000] text-[#ffffff] flex flex-col">
