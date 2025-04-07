@@ -38,6 +38,7 @@ export function JazzHero({ activeLink }: JazzHeroProps) {
         <NavLink href="/tour" label="Games" isActive={currentActiveLink === "tour"} />
         <NavLink href="/videos" label="Random" isActive={currentActiveLink === "videos"} />
         <NavLink href="/contact" label="About" isActive={currentActiveLink === "about"} />
+        <NavLink href="/contact" label="Request" isActive={currentActiveLink === "about"} />
       </nav>
 
       {/* Main content */}
